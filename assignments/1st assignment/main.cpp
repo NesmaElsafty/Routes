@@ -1,0 +1,368 @@
+#include <iostream>
+
+using namespace std;
+
+/*
+// Q1
+int main()
+{
+     int num;
+    cout << "Enter number: ";
+    cin>> num;
+    cout << endl <<num;
+}
+
+/*
+// Q2
+int main()
+{
+      int one;
+    int two;
+    int three;
+    int sum;
+
+    cout << "Please enter first number: ";
+    cin>> one;
+
+    cout << "Please enter second number: ";
+    cin>> two;
+
+    cout << "Please enter third number: ";
+    cin>> three;
+    sum = one + two + three;
+    cout << "Summation of 3 integers is: " << sum;
+}
+
+
+// Q3
+int main()
+{
+
+    float one;
+    float two;
+    float three;
+    float sum;
+    float avg;
+
+    cout << "Please enter first number: ";
+    cin>> one;
+
+    cout << "Please enter second number: ";
+    cin>> two;
+
+    cout << "Please enter third number: ";
+    cin>> three;
+    sum = one + two + three;
+    avg = sum / 3;
+    cout << "The average= " << avg;
+}
+
+// Q4
+int main()
+{
+
+    int width;
+    int height;
+    int sum;
+    int area;
+    int perimeter;
+
+    cout << "Width = ";
+    cin>> width;
+
+    cout << "Height = ";
+    cin>> height;
+
+    sum = width + height;
+    perimeter = sum * 2;
+    area = width * height;
+
+    cout << "The Perimeter= " << perimeter<<endl;
+    cout << "The Area= " << area;
+
+}
+
+// Q5
+int main()
+{
+    int numOfDays;
+    int years;
+    int daysOfYears;
+    int daysOfWeeks;
+    int modDays;
+    int weeks;
+    int days;
+
+    cout<<"enter number of days: ";
+    cin>> numOfDays;
+
+    years = numOfDays / 360;
+     cout<< "years: "<< years<<endl;
+
+    daysOfYears = years * 360;
+
+    if(numOfDays > daysOfYears) {
+        modDays = numOfDays - daysOfYears;
+        weeks = modDays / 7;
+        cout<<"Weeks= "<<weeks<<endl;
+
+        daysOfWeeks = weeks * 7;
+        if(numOfDays > daysOfWeeks){
+            days = modDays - daysOfWeeks;
+            cout<<"days = "<< days<<endl;
+        }else{
+            cout<<"just years and weeks";
+        }
+    }else{
+        cout<<"just years";
+    }
+
+
+}
+
+// Q6
+int main()
+{
+    int num;
+
+    cout << "Enter number: ";
+    cin>>num;
+
+    if(num%3 == 0 && num%4 == 0){
+        cout<<"yes";
+    }else{
+        cout<<"No";
+    }
+}
+
+// Q7
+int main()
+{
+   int num;
+
+    cout << "Enter number: ";
+    cin>>num;
+
+    if(num >= 0){
+        cout<< "positive";
+    }else{
+        cout<< "negative";
+    }
+}
+
+// Q8
+int main()
+{
+
+    int one;
+    int two;
+    int three;
+    int four;
+    int five;
+    int sum = 0;
+
+    cout << "Please enter first number: ";
+    cin>> one;
+
+    cout << "Please enter second number: ";
+    cin>> two;
+
+    cout << "Please enter third number: ";
+    cin>> three;
+
+    cout << "Please enter forth number: ";
+    cin>> four;
+
+    cout << "Please enter fifth number: ";
+    cin>> five;
+
+    if(one%2 != 0){
+        sum = one;
+    }
+     if(two%2 != 0){
+        sum +=two;
+    }
+     if(three%2 != 0){
+        sum += three;
+    }
+     if(four%2 != 0){
+        sum += four;
+    }
+     if(five%2 != 0){
+        sum += five;
+    }
+
+    cout<< "Sum = "<<sum;
+}
+
+
+// Q9
+int main()
+{
+    int num;
+    cout<< "enter the month number: ";
+    cin>>num;
+
+    switch(num) {
+      case 1:
+          cout<<"January";
+        break;
+        case 2:
+          cout<<"February ";
+        break;
+        case 3:
+          cout<<"March";
+        break;
+        case 4:
+          cout<<"April";
+        break;
+        case 5:
+          cout<<"May";
+        break;
+        case 6:
+          cout<<"June ";
+        break;
+        case 7:
+          cout<<"July";
+        break;
+        case 8:
+          cout<<"August";
+        break;
+        case 9:
+          cout<<"September";
+        break;
+        case 10:
+          cout<<"October ";
+        break;
+        case 11:
+          cout<<"November ";
+        break;
+        case 12:
+          cout<<"December ";
+        break;
+
+        default:
+            cout<<"there are just 12 months in the year";
+    }
+}
+
+
+// Q10
+int main()
+{
+    int totalSeconds;
+    int seconds;
+    int totalMins;
+    int mins;
+    int minSeconds;
+    int minHours;
+    int hours;
+
+    cout<< "enter the number of seconds: ";
+    cin>>totalSeconds;
+
+    totalMins = totalSeconds / 60; //will be needed later
+    minSeconds = totalMins * 60;
+
+    seconds = totalSeconds - minSeconds; //will be printed
+
+    hours = totalMins / 60; //will be printed
+
+    minHours = hours * 60;
+    mins = totalMins - minHours; //will be printed
+
+    cout << "H:M:S - " << hours << ":" << mins << ":" << seconds;
+}
+
+// Q11
+int main()
+{
+    int num;
+    cout << "enter the number: ";
+    cin>> num;
+
+    string result = (num%2 == 0) ? "Even" : "Odd";
+    cout<<result;
+}
+
+
+// Q12 >>> my try
+int main()
+{
+    char letter;
+    cout<< "enter letter: ";
+    cin>>letter;
+
+    if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"){
+        cout << "vowel";
+    }else{
+        cout << "consonant"
+    }
+}
+
+// Q12 >>> by search but i got it
+int main()
+{
+    char c;
+    bool isLowercaseVowel, isUppercaseVowel;
+
+    cout << "Enter an alphabet: ";
+    cin >> c;
+
+    isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+
+    if (!isalpha(c)){
+      printf("Error! Non-alphabetic character.");
+    }
+    else if (isLowercaseVowel || isUppercaseVowel){
+        cout << c << " is a vowel.";
+    }
+    else{
+        cout << c << " is a consonant.";
+    }
+}
+
+
+// Q13
+int main()
+{
+    int one;
+    int two;
+    int three;
+    int maxNum;
+    int minNum;
+
+
+    cout << "Please enter first number: ";
+    cin>> one;
+
+    cout << "Please enter second number: ";
+    cin>> two;
+
+    cout << "Please enter third number: ";
+    cin>> three;
+
+    if (one > two && one>three){
+        maxNum = one;
+    }else if (two > one && two > three){
+        maxNum = two;
+    }else{
+        maxNum = three;
+    }
+
+    if (one < two && one < three){
+        minNum = one;
+    }else if (two < one && two < three){
+        minNum = two;
+    }else{
+        minNum = three;
+    }
+
+    cout << "max element: " << maxNum<<endl;
+    cout << "min element: " << minNum<<endl;
+}
+*/
+
+
+
