@@ -131,7 +131,7 @@ int main()
 */
 
 //Q10
-/*
+
 int main()
 {
     int base;
@@ -148,4 +148,4 @@ int main()
     cout<<power;
     return 0;
 }
-*/
+
