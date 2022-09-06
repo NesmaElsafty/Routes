@@ -38,11 +38,11 @@ public:
         }
    }
 
-    int getName(){
+    string getName(){
         return name;
     }
 
-    string getAge(){
+    int getAge(){
         return age;
     }
 
