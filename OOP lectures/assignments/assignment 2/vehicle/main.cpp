@@ -27,11 +27,6 @@ public:
         return F_consumption;
     }
 
-
-    double fuelNeeded(double distance){
-        return distance * f_consumbtion;
-    }
-
     void setSpeed(int s){
         speed = s;
     }
@@ -39,6 +34,16 @@ public:
     int getSpeed(){
         return speed;
     }
+
+    double fuelNeeded(double distance){
+        return distance * f_consumbtion;
+    }
+
+    double distanceCovered(int hours){
+        return speed * hours;
+    }
+
+
 };
 
 int main()
