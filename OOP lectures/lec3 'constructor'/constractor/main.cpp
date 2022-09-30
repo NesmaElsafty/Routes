@@ -37,7 +37,7 @@ public:
         }
    }
 
-    int getName(){
+    string getName(){
         return name;
     }
 
